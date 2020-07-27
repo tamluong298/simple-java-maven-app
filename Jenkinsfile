@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3-alpine' 
+            //image 'maven:3-alpine'
+            image 'qasymphony/build:gradle-4.2-aws-cli-v2'
             args '-v /root/.m2:/root/.m2' 
         }
     }
